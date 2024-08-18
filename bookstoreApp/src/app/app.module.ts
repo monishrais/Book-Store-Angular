@@ -1,14 +1,16 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HowitworksComponent } from './howitworks/howitworks.component';
-import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterOutlet } from '@angular/router';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
+import { PublicRoutingModule } from './public/public-routing.module';
+import { PublicModule } from './public/public.module';
 
-const routes: Routes = [{ path: 'about-us', component: AboutUsComponent },
-{ path: 'howitworks', component: HowitworksComponent }
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,11 @@ const routes: Routes = [{ path: 'about-us', component: AboutUsComponent },
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    AuthModule,
+    UserModule,
+    PublicRoutingModule,
+    PublicModule
   ],
   providers: [],
   bootstrap: [AppComponent]
