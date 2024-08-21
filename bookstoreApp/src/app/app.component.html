@@ -1,7 +1,7 @@
 <div>
   <a routerLink="/about-us">About Us</a>
   <a routerLink="/howitworks">How its Work</a>
-  <a routerLink="/auth/login">Login</a>
+   <a routerLink="/auth/login"[queryParams]="{name:'Monish',Email:email}">Login</a>
   <a routerLink="/public/allbooks">All Books</a>
   <a [routerLink]="['/public/book-details',12,'author',1250]">Details</a>
 </div>
