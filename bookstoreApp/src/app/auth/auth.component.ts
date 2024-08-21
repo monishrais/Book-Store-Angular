@@ -8,21 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AuthComponent implements OnInit {
 
-  public name: string = "";
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.route.queryParams.subscribe((queryparam => {
-      this.name = queryparam['name'];
-      console.log(queryparam);
-    }))
-  }
-  gotosignUp(): void {
-    this.router.navigate(['/auth/signup']);
-  }
-  gotobookdetail(id: number, autherid: number): void {
-    this.router.navigate(['/public/book-details', id, 'author', autherid],
-      {queryParams:{name:'Monish'}});
-  }
-
+  ngOnInit(): void {   
+  } 
 }
