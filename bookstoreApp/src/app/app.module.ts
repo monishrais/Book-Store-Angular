@@ -6,10 +6,10 @@ import { HowitworksComponent } from './howitworks/howitworks.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
-import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { booksModule } from './public/Books.module';
 
 @NgModule({
   declarations: [
@@ -22,9 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule, 
     AuthModule,
     UserModule,
-    PublicModule,
     SharedModule,
     BrowserAnimationsModule,
+    booksModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
