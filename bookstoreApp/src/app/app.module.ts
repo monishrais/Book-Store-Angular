@@ -1,30 +1,30 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { HowitworksComponent } from './howitworks/howitworks.component';
+import { AboutUsComponent } from './Public-Components/about-us/about-us.component';
+import { HowitworksComponent } from './Public-Components/howitworks/howitworks.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { SharedModule } from './shared/shared.module';
-import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { booksModule } from './public/Books.module';
+import { booksModule } from './books/books.module';
+import { HomeComponent } from './Public-Components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutUsComponent,
-    HowitworksComponent
+    HowitworksComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    AuthModule,
     UserModule,
     SharedModule,
     BrowserAnimationsModule,
-    booksModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
