@@ -10,6 +10,6 @@ import { RouterModule } from '@angular/router';
   declarations: [NotFoundComponent, ToolbarComponent,FooterComponent],
   imports: [CommonModule,MaterialModule,RouterModule,  
   ], 
-  exports:[ToolbarComponent,FooterComponent] 
+  exports:[ToolbarComponent,FooterComponent,MaterialModule] 
 })
 export class SharedModule { }

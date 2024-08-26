@@ -5,6 +5,8 @@ import { BookDetailsComponent } from './component/book-details/book-details.comp
 import { booksComponent} from './books.component';
 import { booksRoutingModule } from './books-routing.module';
 import { AddBookComponent } from '../user/Components/add-book/add-book.component';
+import { SharedModule } from '../shared/shared.module';
+
 
 @NgModule({
   declarations: [    
@@ -16,7 +18,9 @@ import { AddBookComponent } from '../user/Components/add-book/add-book.component
   imports: [
     CommonModule,
     booksRoutingModule,
-  ]
+    SharedModule,
+  ],
+// providers:[BookService]
 })
 export class booksModule { }
 
