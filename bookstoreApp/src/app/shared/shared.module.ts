@@ -5,11 +5,12 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material.module';
 import { RouterModule } from '@angular/router';
+import { AuthorsComponent } from './components/authors/authors.component';
 
 @NgModule({
-  declarations: [NotFoundComponent, ToolbarComponent,FooterComponent],
+  declarations: [NotFoundComponent, ToolbarComponent,FooterComponent, AuthorsComponent],
   imports: [CommonModule,MaterialModule,RouterModule,  
   ], 
-  exports:[ToolbarComponent,FooterComponent,MaterialModule] 
+  exports:[ToolbarComponent,FooterComponent,MaterialModule,AuthorsComponent] 
 })
 export class SharedModule { }

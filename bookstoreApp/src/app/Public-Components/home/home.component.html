@@ -1,8 +1,13 @@
 <p>home works!</p>
-<button (click)="increase()">Counter ++</button>
-<button (click)="decrease()">Counter -- </button>
+<!-- <button (click)="increase()" mat-raised-button #decbutton>Counter ++</button>
+<button (click)="decrease()">Counter -- </button> 
 <p>Counter={{_counter.counter}}</p>
-
 <p>{{title.Title}}</p> 
-
  <p>Description : {{title.description}}</p>
+ <H1>Our Authors</H1>-->
+ <!-- <app-authors #authors [Data]=_counter.counter [ShowAuthers]="_counter.counter>2"></app-authors> -->
+ 
+ <H1>Our Authors</H1>
+ <p>The Data is passing from child to Parent : {{_testservice.Mydata}} </p>
+ <app-authors></app-authors>
+ <!-- <app-authors (mydata)="childdata($event)"></app-authors> -->

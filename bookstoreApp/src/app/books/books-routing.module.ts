@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AllbooksComponent } from './component/allbooks/allbooks.component';
 import { BookDetailsComponent } from './component/book-details/book-details.component';
 import { HomeComponent } from '../Public-Components/home/home.component';
+import { RecentBooksComponent } from './component/recent-books/recent-books.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'allbooks', component:AllbooksComponent },   
+  { path: 'allbooks', component:AllbooksComponent }, 
+  { path: 'recent-books', component:RecentBooksComponent },  
   { path: ':id',component: BookDetailsComponent},
   // { path: 'book-details',component: BookDetailsComponent },
 ];
