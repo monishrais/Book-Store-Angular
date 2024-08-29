@@ -14,6 +14,7 @@ import { CounterService } from './shared/Services/counter.service';
 import { Counter2Service } from './shared/Services/counter2.service';
 import { TestService } from './shared/Services/Test.service';
 import { Counterfactory } from './shared/Services/CounterFactory';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [

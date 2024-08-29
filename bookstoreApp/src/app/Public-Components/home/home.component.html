@@ -7,7 +7,8 @@
  <H1>Our Authors</H1>-->
  <!-- <app-authors #authors [Data]=_counter.counter [ShowAuthers]="_counter.counter>2"></app-authors> -->
  
- <H1>Our Authors</H1>
- <p>The Data is passing from child to Parent : {{_testservice.Mydata}} </p>
- <app-authors></app-authors>
+ <button (click)="counter()">Count</button>
+ <H1>This Author is coming from child Authors</H1>
+ <!-- <p>The Data is passing from child to Parent : {{_testservice.Mydata}} </p> -->
+ <app-authors [Data]="count" [authers]="obj"></app-authors>
  <!-- <app-authors (mydata)="childdata($event)"></app-authors> -->

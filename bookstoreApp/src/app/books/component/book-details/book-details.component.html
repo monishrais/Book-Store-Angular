@@ -1,2 +1,7 @@
 <p>book-details works!</p>
 <p>ID : {{id}}</p>
+<h1>Add New Book</h1>
+<form #myForms="ngForm">
+    <input type="text" name="bookTitle" id="bookTitle" ngModel>
+    <button type="submit">Save</button>
+</form>

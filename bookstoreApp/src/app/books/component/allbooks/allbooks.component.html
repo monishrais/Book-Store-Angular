@@ -1,6 +1,9 @@
 <h2>{{PageTitle}}</h2>
+<button mat-raised-button color="primary" routerLink="/books/add-book">Add New Book </button>
+<br/>
 <a routerLink="/books/recent-books">Recent Books</a><br>
 <button (click)="increase()">Counter ++</button>
 <button (click)="decrease()">Counter -- </button>
 <p>Counter={{_counter.counter}}</p>
 <app-bookcard [books]="books"></app-bookcard> 
+
