@@ -38,6 +38,8 @@ export class AllbooksComponent implements OnInit {
     obj.title=b.title,
     obj.auther=b.auther,
     obj.totalNumber=b.totalNumber
+    obj.ispiblish=b.ispiblish;
+    obj.date=b.date;
      this.books.push(obj);
     }) 
     console.log(this.books);
